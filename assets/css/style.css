@@ -129,7 +129,7 @@ grid-template-columns: 1fr;
   font-family: Arial;
   
 }
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .container {
   align-items: center;
   background-color: white;
@@ -138,15 +138,14 @@ grid-template-columns: 1fr;
   height:50%;
   max-width: 60%;
   min-width: 50%;
-  padding: 1.5rem;
 }
   .header {
   display: grid;
   position: fixed;
-  min-width: 3.3rem;
-  max-height: 80rem;
-  width: 3.3rem;
-  height: 20rem;
+  min-width: 8rem;
+  max-height: 400rem;
+  width: 8rem;
+  height: 100%;
   left: 0%;
   border-style: solid;
   border-width: 0.1rem;
@@ -162,7 +161,7 @@ grid-template-columns: 1fr;
   }
   .titulo{
   font-size: 1em;
-  margin-left: 40%;
+  margin-left: 30rem;
   top: 2.5%;
    width: 70%;
   height: 50%;
@@ -170,28 +169,24 @@ grid-template-columns: 1fr;
   min-width: 70%;
 }
 .image_principal {
-
-  display: flex;
-   margin-left: 30%;
-   margin-top: 1em;
-  width: 70%;
-  height: 50%;
-   max-width: 70%;
+  margin-left: 8rem;
+   margin-top: 0em;
+  width: 55rem;
+  height: 35rem;
    min-width:40%;
- 
-  margin-bottom: 1.5em;
+}
 }
 
 .logo {
   display: grid;
   margin-left: 0em;
     top: 1rem;
-  width: 3.3em;
-    height: 3rem;
+  width: 8rem;
+    height: 5rem;
 }
 .descricoes{
   display: grid;
-  margin-left: 30%;
+  margin-left: 30rem;
   font-size: 0.5em;
   width: 70%;
   max-width: 100%;
