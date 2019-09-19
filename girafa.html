@@ -3,22 +3,22 @@
 <head>
 	<title> girafa</title>
 	<link href = "assets/css/reset.css" rel="stylesheet">
-    <link href = "assets/css/style.css" rel="stylesheet"> 
+    <link href = "assets/css/style.css" rel="stylesheet">
     <link href = "https://fonts.googleapis.com/css?family=bodoni">
     <link href = "https://fonts.googleapis.com/css?family=Arial">
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <script src="assets/js/codes.js"></script>
+    <script src="assets/js/projeto.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 	<div class="container">
 	<header class="header">
         <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="logo"></a>
-        <li class="categorias_laterais"><a href="Design.html">Design</a></li>
-        <li class="categorias_laterais"><a href="categoria.html">Física</a></li>
-        <li class="categorias_laterais"><a href="matematica.html">Matemática</a></li>
-        <li class="categorias_laterais"><a href="programacao.html">Programação</a></li>
-        <li class="categorias_laterais"><a href="laboratorios.html">Laboratórios</a></li>
-     </header>
+        {{#each areasdoconhecimento}}
+        <li class="categorias_laterais"><a href="{{this.categoria}}.html?key={{@key}}">{{this.categoria}}</a></li>
+        {{/each}}
+     	</header>
   
 	
 
